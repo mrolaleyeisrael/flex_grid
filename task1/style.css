@@ -6,16 +6,17 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   position: relative;
 }
 
-header{
+.test {
   position: absolute;
   top: 50px;
+  left: 0;
 }
 
-.header{
+.header {
   text-decoration: none;
   color: #fff;
   background-color: black;
@@ -23,7 +24,7 @@ header{
   padding: 20px
 }
 
-.header:hover{
+.header:hover {
   cursor: pointer;
 }
 
