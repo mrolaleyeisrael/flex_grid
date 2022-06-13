@@ -6,6 +6,27 @@
   box-sizing: border-box;
 }
 
+body{
+  position: relative;
+}
+
+header{
+  position: absolute;
+  top: 50px;
+}
+
+.header{
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px
+}
+
+.header:hover{
+  cursor: pointer;
+}
+
 .main-container {
   position: relative;
   width: 100%;
@@ -106,4 +127,51 @@
 
 .credit-img {
   width: 50px;
+}
+
+
+
+
+.container {
+  width: 60%;
+  display: grid;
+
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.red {
+  background-color: red;
+  padding: 40px;
+  grid-column: 1 / 5;
+  grid-row: span 2;
+}
+
+.yellow {
+  background-color: yellow;
+  padding: 40px;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.green {
+  background-color: green;
+  padding: 40px;
+  grid-row: span 2;
+  grid-column: span 3;
+
+}
+
+.blue1 {
+  background-color: blue;
+  padding: 40px;
+
+  grid-column: span 3;
+}
+
+.blue2 {
+  background-color: blue;
+  padding: 40px;
+  grid-column: span 3;
 }
